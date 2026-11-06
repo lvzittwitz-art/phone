@@ -1,0 +1,42 @@
+{
+  "version": "0.1.0",
+  "beschreibung": "Kuratierter Feed-Katalog für den DACH-Newsjack-Detector. Einträge mit verify=true beim ersten Lauf mit `detector_de.py feeds --check` prüfen.",
+  "lanes": {
+    "leitmedien": {"gewicht": 15, "beschreibung": "Überregionale Leitmedien, Wirtschaftsressorts"},
+    "arbeitsmarkt": {"gewicht": 15, "beschreibung": "Amtliche Statistik, Behörden, Wirtschaftsforschung zum Arbeitsmarkt"},
+    "fachpresse_hr": {"gewicht": 10, "beschreibung": "HR- und Personal-Fachpresse"},
+    "wirtschaft_regional": {"gewicht": 8, "beschreibung": "Öffentlich-rechtliche Regionalsender, Wirtschaft"},
+    "presseportale": {"gewicht": 5, "beschreibung": "Pressemitteilungsportale, Signal für Konkurrenz-PR"},
+    "politik": {"gewicht": 10, "beschreibung": "Bundesregierung, Bundestag"}
+  },
+  "feeds": [
+    {"id": "tagesschau", "name": "tagesschau.de (alle Meldungen)", "url": "https://www.tagesschau.de/xml/rss2/", "lane": "leitmedien", "language": "de", "notes": "Breiter Feed, viele Items pro Tag"},
+    {"id": "tagesschau-wirtschaft", "name": "tagesschau.de Wirtschaft", "url": "https://www.tagesschau.de/wirtschaft/index~rss2.xml", "lane": "leitmedien", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "spiegel-wirtschaft", "name": "SPIEGEL Wirtschaft", "url": "https://www.spiegel.de/wirtschaft/index.rss", "lane": "leitmedien", "language": "de", "notes": "Teils Paywall (S+), Teaser im Feed"},
+    {"id": "zeit-wirtschaft", "name": "ZEIT ONLINE Wirtschaft", "url": "https://newsfeed.zeit.de/wirtschaft/index", "lane": "leitmedien", "language": "de", "notes": "Teils Z+"},
+    {"id": "zeit-arbeit", "name": "ZEIT ONLINE Arbeit", "url": "https://newsfeed.zeit.de/arbeit/index", "lane": "leitmedien", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "faz-wirtschaft", "name": "FAZ Wirtschaft", "url": "https://www.faz.net/rss/aktuell/wirtschaft/", "lane": "leitmedien", "language": "de", "notes": "Teils F+"},
+    {"id": "sz-wirtschaft", "name": "Süddeutsche Zeitung Wirtschaft", "url": "https://rss.sueddeutsche.de/rss/Wirtschaft", "lane": "leitmedien", "language": "de", "notes": "Teils SZ Plus"},
+    {"id": "handelsblatt", "name": "Handelsblatt (Schlagzeilen)", "url": "https://www.handelsblatt.com/contentexport/feed/schlagzeilen", "lane": "leitmedien", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; überwiegend Paywall"},
+    {"id": "ba-presse", "name": "Bundesagentur für Arbeit, Presse", "url": "https://www.arbeitsagentur.de/presse/rss", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; Monatsbericht Arbeitsmarkt jeweils Monatsende"},
+    {"id": "destatis-presse", "name": "Destatis Pressemitteilungen", "url": "https://www.destatis.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/Pressemitteilungen.xml", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; Erwerbstätigkeit, Verdienste, Arbeitskosten"},
+    {"id": "bmas-presse", "name": "BMAS Pressemitteilungen", "url": "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/Pressemitteilungen.xml", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "iab", "name": "IAB (Institut für Arbeitsmarkt- und Berufsforschung)", "url": "https://www.iab.de/rss/", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; IAB-Kurzberichte, Stellenerhebung"},
+    {"id": "dgb", "name": "DGB Pressemitteilungen", "url": "https://www.dgb.de/presse/rss", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "ifo-presse", "name": "ifo Institut Pressemitteilungen", "url": "https://www.ifo.de/rss/presse", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; Beschäftigungsbarometer, Geschäftsklima"},
+    {"id": "iw-koeln", "name": "IW Köln Presse", "url": "https://www.iwkoeln.de/rss/presse.xml", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "diw", "name": "DIW Berlin Pressemitteilungen", "url": "https://www.diw.de/de/diw_01.c.100319.de/presse/pressemitteilungen.rss", "lane": "arbeitsmarkt", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "personalwirtschaft", "name": "Personalwirtschaft", "url": "https://www.personalwirtschaft.de/feed/", "lane": "fachpresse_hr", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "haufe-personal", "name": "haufe.de Personal", "url": "https://www.haufe.de/personal/rss.xml", "lane": "fachpresse_hr", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; Feed oft nur Teaser"},
+    {"id": "hr-manager", "name": "Human Resources Manager", "url": "https://www.humanresourcesmanager.de/feed/", "lane": "fachpresse_hr", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "personalmagazin", "name": "Personalmagazin (Haufe)", "url": "https://www.haufe.de/personal/hr-management/rss.xml", "lane": "fachpresse_hr", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; überschneidet sich mit haufe-personal"},
+    {"id": "rbb24", "name": "rbb24 (Berlin/Brandenburg)", "url": "https://www.rbb24.de/aktuell/index.xml/feed=rss.xml", "lane": "wirtschaft_regional", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "wdr", "name": "WDR Nachrichten", "url": "https://www1.wdr.de/nachrichten/uebersicht-nachrichten-100.feed", "lane": "wirtschaft_regional", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "br24-wirtschaft", "name": "BR24 Wirtschaft", "url": "https://www.br.de/nachrichten/wirtschaft/rss", "lane": "wirtschaft_regional", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "ndr", "name": "NDR Nachrichten", "url": "https://www.ndr.de/nachrichten/index-rss.xml", "lane": "wirtschaft_regional", "language": "de", "notes": "Breiter Nord-Feed"},
+    {"id": "presseportal", "name": "presseportal.de (news aktuell)", "url": "https://www.presseportal.de/rss/presseportal.rss2", "lane": "presseportale", "language": "de", "notes": "Sehr hohes Volumen; nur mit engen search_terms sinnvoll. Signal für Wettbewerber-PR"},
+    {"id": "pressetext", "name": "pressetext (DACH)", "url": "https://www.pressetext.com/rss", "lane": "presseportale", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "bundesregierung", "name": "Bundesregierung Aktuelles", "url": "https://www.bundesregierung.de/service/rss/breg-de/1151244/feed.xml", "lane": "politik", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen"},
+    {"id": "bundestag-hib", "name": "Bundestag hib (heute im bundestag)", "url": "https://www.bundestag.de/static/appdata/includes/rss/hib.rss", "lane": "politik", "language": "de", "verify": true, "notes": "URL beim ersten Lauf prüfen; Ausschuss-Meldungen, Anfragen zu Arbeit und Soziales"}
+  ]
+}
