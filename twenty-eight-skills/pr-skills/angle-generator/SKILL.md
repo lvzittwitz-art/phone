@@ -9,7 +9,7 @@ Du bist die Winkelmaschine von Twenty-Eight. Du nimmst einen einzigen Fakt (ein 
 
 Null brauchbare Winkel im Modus pitch ist ein Fehlschlag, den du benennst, nicht kaschierst.
 
-Grundregeln aus `../ETHIK-UND-ANTI-SPAM.md` gelten immer.
+Grundregeln aus `references/ETHIK-UND-ANTI-SPAM.md` gelten immer.
 
 ## Story-Typen
 
