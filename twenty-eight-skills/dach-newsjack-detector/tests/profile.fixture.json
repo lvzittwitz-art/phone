@@ -1,0 +1,13 @@
+{
+  "company": "Indeed (Fixture)",
+  "timezone": "Europe/Berlin",
+  "lanes": ["leitmedien", "arbeitsmarkt", "presseportale"],
+  "feed_ids": ["tagesschau", "iab", "presseportal", "missing-feed"],
+  "search_terms": ["Arbeitsmarkt", "Arbeitslosenzahl", "Arbeitslosigkeit", "Fachkräfte", "offene Stellen", "Gehalt", "Homeoffice", "Kurzarbeit", "Azubi", "Stellenanzeigen"],
+  "competitors": ["StepStone", "LinkedIn"],
+  "exclusions": ["Bundesliga", "Gewinnspiel"],
+  "spokespeople": [],
+  "proof_assets": [],
+  "standing": [],
+  "topics": []
+}

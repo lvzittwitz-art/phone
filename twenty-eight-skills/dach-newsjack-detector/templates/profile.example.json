@@ -1,0 +1,83 @@
+{
+  "company": "Indeed",
+  "website": "https://de.indeed.com",
+  "one_liner": "Weltweit größte Jobseite; in DACH Datenquelle für Arbeitsmarkt-Trends über das Indeed Hiring Lab.",
+  "geography": "DACH",
+  "timezone": "Europe/Berlin",
+  "topics": [
+    "Arbeitsmarkt",
+    "Fachkräftemangel",
+    "Gehälter und Löhne",
+    "Remote Work und Homeoffice",
+    "KI am Arbeitsplatz",
+    "Ausbildung und Berufseinstieg",
+    "Zuwanderung und Fachkräfteeinwanderung",
+    "Kurzarbeit und Konjunktur"
+  ],
+  "competitors": ["StepStone", "LinkedIn", "XING", "New Work SE", "Glassdoor", "Kununu"],
+  "search_terms": [
+    "Arbeitsmarkt",
+    "Arbeitslosenzahl",
+    "Arbeitslosigkeit",
+    "Fachkräftemangel",
+    "Fachkräfte",
+    "Stellenanzeigen",
+    "offene Stellen",
+    "Gehalt",
+    "Löhne",
+    "Tarifabschluss",
+    "Mindestlohn",
+    "Homeoffice",
+    "Remote Work",
+    "Vier-Tage-Woche",
+    "Kurzarbeit",
+    "Ausbildungsplätze",
+    "Azubi",
+    "Fachkräfteeinwanderung",
+    "Künstliche Intelligenz Arbeitsplatz",
+    "Stellenabbau"
+  ],
+  "exclusions": [
+    "Fußball",
+    "Bundesliga",
+    "Transfermarkt",
+    "Gewinnspiel",
+    "Horoskop"
+  ],
+  "lanes": ["leitmedien", "arbeitsmarkt", "fachpresse_hr", "politik"],
+  "feed_ids": [
+    "tagesschau",
+    "spiegel-wirtschaft",
+    "zeit-wirtschaft",
+    "faz-wirtschaft",
+    "sz-wirtschaft",
+    "ba-presse",
+    "destatis-presse",
+    "bmas-presse",
+    "iab",
+    "ifo-presse",
+    "personalwirtschaft",
+    "haufe-personal",
+    "bundestag-hib"
+  ],
+  "spokespeople": [
+    {"name": "Frank Hensgens", "role": "Geschäftsführer Indeed DACH", "themen": ["Arbeitsmarkt allgemein", "Recruiting", "Arbeitgeberperspektive"], "status": "prüfen"},
+    {"name": "Virginia Sondergeld", "role": "Ökonomin Indeed Hiring Lab", "themen": ["Daten", "Stellenanzeigen-Index", "Gehälter", "Remote-Anteil", "KI in Stellenanzeigen"], "status": "prüfen"}
+  ],
+  "proof_assets": [
+    {"name": "Indeed Stellenanzeigen-Index", "beschreibung": "Tagesaktueller Index offener Stellen auf Indeed Deutschland, Basis Feb 2020 = 100", "aktualisierung": "täglich"},
+    {"name": "Indeed Gehaltsdaten", "beschreibung": "In Stellenanzeigen ausgewiesene Gehälter nach Beruf und Region", "aktualisierung": "monatlich"},
+    {"name": "Remote-Anteil", "beschreibung": "Anteil der Stellenanzeigen mit Homeoffice- oder Remote-Angebot", "aktualisierung": "monatlich"},
+    {"name": "KI-Begriffe in Stellenanzeigen", "beschreibung": "Anteil der Anzeigen mit KI-Skills, Entwicklung nach Branche", "aktualisierung": "quartalsweise"}
+  ],
+  "standing": [
+    "Indeed sieht Nachfrageverschiebungen am Arbeitsmarkt vor den amtlichen Zahlen, weil Stellenanzeigen ein Frühindikator sind.",
+    "Das Hiring Lab publiziert eigene Daten und Analysen, nicht nur Meinungen.",
+    "Gehalts- und Remote-Daten liegen granular nach Beruf und Region vor.",
+    "Kein Standing bei: Einzelschicksalen, Tarifpolitik einzelner Branchen ohne Datenbezug, parteipolitischen Bewertungen."
+  ],
+  "delivery": {
+    "slack": "über bestehendes Make-Szenario; Webhook liegt in Make, nie im Profil oder im Chat",
+    "policy": "pitch-ready"
+  }
+}

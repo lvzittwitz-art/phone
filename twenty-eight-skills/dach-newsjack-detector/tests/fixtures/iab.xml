@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>IAB (Fixture)</title>
+<link href="https://www.iab.de/"/>
+<entry>
+<title>Fachkraeftemangel: Jede dritte Firma findet keine Azubis</title>
+<link rel="alternate" href="https://www.iab.de/presse/ausbildung-2026/"/>
+<id>urn:iab:ausbildung-2026</id>
+<published>2026-11-06T05:50:00Z</published>
+<summary>IAB-Betriebspanel: 34 Prozent der Betriebe konnten Ausbildungsplätze nicht besetzen.</summary>
+</entry>
+<entry>
+<title>IAB-Stellenerhebung: 1,4 Millionen offene Stellen im dritten Quartal</title>
+<link rel="alternate" href="https://www.iab.de/presse/stellenerhebung-q3-2026/"/>
+<id>urn:iab:stellen-q3</id>
+<updated>2026-11-06T07:30:00+01:00</updated>
+<summary>Die Zahl der offenen Stellen geht gegenüber dem Vorjahr zurück.</summary>
+</entry>
+<entry>
+<title>Kurzarbeit steigt in der Industrie deutlich</title>
+<link rel="alternate" href="https://www.iab.de/presse/kurzarbeit-industrie/"/>
+<id>urn:iab:kurzarbeit</id>
+<published>2026-11-05T12:00:00Z</published>
+<summary>Vor allem Automobilzulieferer melden Kurzarbeit an.</summary>
+</entry>
+<entry>
+<title>Programm der IAB-Jahrestagung veröffentlicht</title>
+<link rel="alternate" href="https://www.iab.de/veranstaltungen/jahrestagung/"/>
+<id>urn:iab:tagung</id>
+<published>2026-11-06T08:00:00Z</published>
+<summary>Anmeldung ab sofort möglich.</summary>
+</entry>
+<entry>
+<title>Wer kriegt den Job? Neue Auswertung zu Bewerbungsverfahren</title>
+<link rel="alternate" href="https://www.iab.de/presse/bewerbungen/"/>
+<id>urn:iab:bewerbungen</id>
+<published>2026-11-06T08:10:00Z</published>
+<summary>Die Studie untersucht Auswahlkriterien bei Stellenanzeigen mit gewaltiger Datenbasis.</summary>
+</entry>
+<entry>
+<title>Neuer Datensatz zur Arbeitslosigkeit von Geflüchteten</title>
+<link rel="alternate" href="https://www.iab.de/presse/datensatz-gefluechtete/"/>
+<id>urn:iab:datensatz</id>
+<published>2026-11-06T04:00:00Z</published>
+<summary>Der Datensatz steht Forschenden zur Verfügung.</summary>
+</entry>
+</feed>

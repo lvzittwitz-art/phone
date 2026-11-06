@@ -1,0 +1,58 @@
+{
+  "titel": "GEO-Audit: GEO PR Leistungsseite",
+  "kunde": "Twenty-Eight (Eigenseite)",
+  "url": "https://twenty-eight.agency/geo-pr/",
+  "zielfrage": "Was ist GEO PR und wie werde ich in ChatGPT zitiert?",
+  "datum": "2026-11-06",
+  "status": "Ausbaufähig",
+  "score": "5/12",
+  "zusammenfassung": "Die Seite erklärt GEO PR korrekt, aber in der Reihenfolge eines Essays: vier Floskel-Einstiege, keine Frage-Überschrift, erste belastbare Aussage erst bei 9 % des Texts, Konkretheit unter 5 %. Mit Takeaway-Block, Frage-Headings, drei belegten Zahlen und einer Vergleichstabelle wird sie zitierfähig. Was fehlt, ist Einzigartigkeit: eine Zahl aus eigenen Projekten.",
+  "vorher_nachher": [
+    {"metrik": "Frage-Überschriften (H2/H3)", "vorher": "0 von 4", "nachher": "3 von 4", "treiber": "Änderungen 2 bis 4"},
+    {"metrik": "Answer Capsules 40–60 Wörter", "vorher": "2 von 4", "nachher": "2 von 4 (Fazit bewusst kurz)", "treiber": "Änderungen 2 bis 4"},
+    {"metrik": "Konkretheitsdichte gesamt", "vorher": "4,2 %", "nachher": "10,4 %", "treiber": "Belegte Zahlen, Tool-Namen"},
+    {"metrik": "Floskeln im Einstieg", "vorher": "4", "nachher": "0", "treiber": "Änderung 1"},
+    {"metrik": "Hedges / vage Quantoren", "vorher": "7 / 6", "nachher": "0 / 0", "treiber": "Durchgehend"},
+    {"metrik": "Takeaway-Block unter H1", "vorher": "fehlt", "nachher": "4 Bullets", "treiber": "Änderung 1"},
+    {"metrik": "Tabellen", "vorher": "0", "nachher": "1", "treiber": "Änderung 3"},
+    {"metrik": "LIX", "vorher": "46,0", "nachher": "52,4 (schwerer)", "treiber": "Längere Sätze durch Zahlen, im Lektorat glätten"}
+  ],
+  "aenderungen": [
+    {
+      "wo": "Einstieg unter H1",
+      "faktor": "POS-DOC",
+      "aktuell": "In der heutigen Zeit verändert sich die Art, wie Menschen nach Informationen suchen, grundlegend. Immer mehr Unternehmen fragen sich, wie sie in KI-Antworten auftauchen können.",
+      "vorschlag": "## Das Wichtigste in Kürze\n\n- GEO PR sorgt dafür, dass ChatGPT, Perplexity und Google AI Overviews eine Marke als Quelle nennen.\n- 44,2 % der ChatGPT-Zitate stammen aus den ersten 30 % einer Seite.\n- Zitierte Seiten beantworten Fragen in 40 bis 60 Wörtern direkt unter der Überschrift.",
+      "warum": "44,2 % der Zitate stammen aus dem ersten Drittel (Studie 1, POS-DOC). Der aktuelle Einstieg enthält vier Floskeln und keine Aussage, die ein Sprachmodell entnehmen könnte."
+    },
+    {
+      "wo": "H2 Grundlagen",
+      "faktor": "QA",
+      "aktuell": "## Grundlagen\n\nGEO PR kann helfen, die Sichtbarkeit in generativen Suchmaschinen zu verbessern.",
+      "vorschlag": "## Was sind die Grundlagen von GEO PR?\n\nGEO PR besteht aus drei Bausteinen: zitierfähige Inhalte, bestätigende Medienerwähnungen und laufende Messung.",
+      "warum": "Frage-Überschrift plus definitive Antwort im ersten Satz (Studie 1 QA und DEFINITIVE, Studie 4 CHUNK). 'kann helfen' ist ein Hedge, den die Fakten nicht erfordern.",
+      "beibehaltene_hedges": ["'bis erste Zitate stabil erscheinen' bleibt vorsichtig, weil die Dauer projektabhängig ist."]
+    }
+  ],
+  "technik": [
+    "JSON-LD FAQPage für die drei Frage-Abschnitte ergänzen.",
+    "dateModified im Article-Schema nach der Überarbeitung aktualisieren und sichtbar als 'Stand: …' ausgeben.",
+    "Englische Zwillingsseite /en/geo-pr/ mit hreflang, weil ein Großteil deutscher ChatGPT-Sessions englische Hintergrundsuchen auslöst (Quelle sekundär, siehe evidenz.md Offen-3)."
+  ],
+  "quellen": [
+    {"zahl": "44,2 % der Zitate aus den ersten 30 %", "quelle": "Kevin Indig, Growth Memo: The science of how AI pays attention", "url": "https://www.growth-memo.com/p/the-science-of-how-ai-pays-attention", "datum": "2026-02-16"},
+    {"zahl": "30 % vs. 13 % Seiten mit Tabelle", "quelle": "Chris Long, Nectiv", "url": "https://nectivdigital.com/blog/new-data-study-chatgpt-citations-are-2-3x-more-likely-to-include-a-table-than-google-search", "datum": "2025"}
+  ],
+  "scorecard": [
+    {"faktor": "Answer Capsules", "befund": "2 von 4 Abschnitten im Zielbereich", "benchmark": "Hausregel 40–60 Wörter", "status": "teilweise"},
+    {"faktor": "Ski-Ramp", "befund": "Erste definitive Aussage bei 9 %, vier Floskeln davor", "benchmark": "Kernaussage in den ersten 30 %", "status": "fehlt"},
+    {"faktor": "Frage-Headings", "befund": "0 von 4", "benchmark": "Jede H2/H3 als Nutzerfrage", "status": "fehlt"},
+    {"faktor": "Einzigartigkeit", "befund": "Nur Allgemeinwissen, keine eigene Zahl", "benchmark": "Mindestens ein Fakt, den nur Twenty-Eight liefern kann", "status": "fehlt"}
+  ],
+  "offene_fragen": [
+    "Wie viele Wochen vergingen im letzten GEO-PR-Projekt bis zum ersten stabilen ChatGPT-Zitat?",
+    "Welche Medienerwähnung hat nachweislich ein Zitat ausgelöst? Medium, Datum, Prompt.",
+    "Gibt es eine eigene Auswertung, wie viele Kundenseiten außerhalb der Google-Top-10 trotzdem zitiert werden?"
+  ],
+  "artikel_md": "tests/fixture_revised.md"
+}
